@@ -1,0 +1,29 @@
+<html>
+<head>
+<Title>sudoku</Title>
+<link rel="stylesheet" type="text/css" href="/css/sudoku.css" />
+</head>
+<body>
+<div id="main" class="content">
+<form method="post">
+<table id="sudoku">
+{% for row in range(9) %}
+   <tr id="row-{% raw row %}">
+   {% for cell in range(9) %}
+   	{% if (sudokutabel[cell+row*9])==0 %}
+   		<td id="cell-{% raw cell+row*9 %}"><input name="cell-{% raw cell+row*9 %}" type="text"/></td>
+	{% else %}
+   		<td id="cell-{% raw cell+row*9 %}"><input name="cell-{% raw cell+row*9 %}" value="{% raw sudokutabel[cell+row*9] %}" type="text"/></td>
+	{% end %}
+   {% end %}
+   </tr>
+{% end %}
+</table>
+<input type="submit" value="Lahenda" />
+</form>
+</div>
+<pre>
+{{ sudokulahendus }}
+</pre>
+</body>
+</html>

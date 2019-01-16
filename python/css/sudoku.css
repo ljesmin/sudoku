@@ -1,0 +1,71 @@
+body {
+    padding-top: 50px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+.btn-group button {
+    width: 70px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn {
+    font-size: 15px;
+}
+
+#invalid_table {
+    display: none;
+}
+
+table#sudoku {
+    border: 3px #888 solid;
+    border-right: 4px #888 solid;
+    width: inherit;
+}
+
+#sudoku #row-3, #sudoku #row-6 {
+    border-top: 3px #888 solid;
+}
+
+#sudoku td {
+    border-left: 1px #888 solid;
+}
+
+#sudoku #cell-3, #sudoku #cell-6, #sudoku #cell-12, #sudoku #cell-15,
+#sudoku #cell-21, #sudoku #cell-24, #sudoku #cell-30, #sudoku #cell-33,
+#sudoku #cell-39, #sudoku #cell-42, #sudoku #cell-48, #sudoku #cell-51,
+#sudoku #cell-57, #sudoku #cell-60, #sudoku #cell-66, #sudoku #cell-69,
+#sudoku #cell-75, #sudoku #cell-78 {
+    border-left: 3px #888 solid;
+}
+
+
+#sudoku input[type=text] {
+    border: 0;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 45px;
+}
+
+#sudoku td {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+#sudoku td input.user_value {
+    color: #3333AA;
+}
+
+#ui {
+    float: left;
+    padding-right: 10px;
+}
